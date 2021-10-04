@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="B24HXr" name="NeuroDrumLive" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" version="0.1.0"
+              companyName="Qosmo" pluginFormats="buildAU,buildStandalone,buildVST3"
+              pluginCharacteristicsValue="pluginIsSynth" pluginAUMainType="'augn'"
+              companyWebsite="https://qosmo.jp/" pluginManufacturerCode="Qsmo"
+              pluginCode="Ndrl">
+  <MAINGROUP id="o5dhpD" name="NeuroDrumLive">
+    <GROUP id="{96662B7D-3EA2-A329-6CDD-9F5B2275E6D8}" name="Source">
+      <FILE id="R9C22I" name="InferenceThreadJob.cpp" compile="1" resource="0"
+            file="Source/InferenceThreadJob.cpp"/>
+      <FILE id="EAVzAD" name="InferenceThreadJob.h" compile="0" resource="0"
+            file="Source/InferenceThreadJob.h"/>
+      <FILE id="Vn6aSK" name="AudioBufferSampler.cpp" compile="1" resource="0"
+            file="Source/AudioBufferSampler.cpp"/>
+      <FILE id="mRT7Zz" name="AudioBufferSampler.h" compile="0" resource="0"
+            file="Source/AudioBufferSampler.h"/>
+      <FILE id="RCRfYK" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="Uizv99" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="AE5H8a" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="kYjv3a" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX" externalLibraries="clog&#10;gmock&#10;gtest&#10;nsync_cpp&#10;onnx_proto&#10;onnx_test_data_proto&#10;onnx_test_runner_common&#10;onnxruntime_common&#10;onnx&#10;onnxruntime_flatbuffers&#10;onnxruntime_framework&#10;onnxruntime_graph&#10;onnxruntime_mlas&#10;onnxruntime_mocked_allocator&#10;onnxruntime_optimizer&#10;onnxruntime_providers&#10;onnxruntime_session&#10;onnxruntime_test_utils&#10;onnxruntime_util&#10;protobuf&#10;re2&#10;cpuinfo">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="NeuroDrumLive" headerPath="../../include/onnxruntime/core/session&#10;../../include/onnxruntime/core/common&#10;../../include/onnxruntime/core/eager&#10;../../include/onnxruntime/core/framework&#10;../../include/onnxruntime/core/graph&#10;../../include/onnxruntime/core/optimizer&#10;../../include/onnxruntime/core/platform&#10;../../include/onnxruntime/core/providers"
+                       libraryPath="../../lib"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="NeuroDrumLive" libraryPath="../../lib"
+                       headerPath="../../include/onnxruntime/core/session&#10;../../include/onnxruntime/core/common&#10;../../include/onnxruntime/core/eager&#10;../../include/onnxruntime/core/framework&#10;../../include/onnxruntime/core/graph&#10;../../include/onnxruntime/core/optimizer&#10;../../include/onnxruntime/core/platform&#10;../../include/onnxruntime/core/providers"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../SDKs_and_Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../SDKs_and_Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../SDKs_and_Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../SDKs_and_Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../SDKs_and_Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../SDKs_and_Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../SDKs_and_Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../SDKs_and_Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../SDKs_and_Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../SDKs_and_Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../SDKs_and_Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../SDKs_and_Libraries/JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+</JUCERPROJECT>
