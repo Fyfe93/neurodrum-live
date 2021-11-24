@@ -198,8 +198,7 @@ void NeuroDrumLiveAudioProcessor::loadFile()
             return;
         
         mModelFile = file;
-        
-        //generateSample();
+
     });
 }
 

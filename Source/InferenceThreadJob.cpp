@@ -195,8 +195,7 @@ auto InferenceThreadJob::runJob() -> JobStatus
     
     mProcessor.mSampler.addSound(new AudioBufferSamplerSound ("Sample", buffer, fs, range, 60, 0.1, 0.1, 10.0));
     
-    DBG("hit");
-    
+    DBG("inference complete");
     
     return JobStatus::jobHasFinished;
 }
