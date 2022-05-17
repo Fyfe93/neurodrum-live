@@ -3,6 +3,8 @@ neurodrum-live: NeuroDrum Sampler VST/AU/Standalone
 
 Generate and play percussion samples using NeuroDrum generative models inside your DAW.
 
+![neurodrum-live_gui](assets/neurodrum-live_gui.png)
+
 ## Instructions
 1. Requires the Juce library as this is a Juce project and uses the Projucer for building. Clone from [here](https://github.com/juce-framework/JUCE)
 
